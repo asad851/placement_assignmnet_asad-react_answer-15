@@ -1,0 +1,80 @@
+body{
+  padding:0;
+  margin:0;
+}
+.formBoxContainer{
+  height:100vh;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  
+}
+.formBox{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  font-size:18px;
+  font-weight: 600;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  min-width:280px;
+  
+  flex-direction: column;
+  border: 1px solid rgba(0,0,0,0.5);
+  box-shadow: 0 10px 8px -8px rgba(0,0,0,0.6);
+  padding:35px 25px ;
+  border-radius: 25px;
+  box-sizing: border-box;
+  gap:10px;
+}
+.form input{
+  width: 97%;
+  border-radius:5px;
+  padding:7px;
+  margin-bottom:20px;
+  border:none;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+  box-shadow: 0 10px 8px -9px rgba(0,0,0,0.6);
+  font-size:16px;
+  font-weight:500;
+  color:rgba(0,0,0)
+}
+input::placeholder{
+  color:rgb(0,0,0,0.4);
+  font-size:15px;
+}
+.form input:focus{
+  outline:none;
+}
+.inputdiv{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:5px;
+}
+.form > span{
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+  text-decoration:underline;
+  color:rgb(36, 108, 240);
+}
+.form > button{
+  background: #a0cad1;
+  border:none;
+  padding:10px;
+  border-radius:10px;
+  font-size: 18px;
+}
+.form > button:active{
+  box-shadow: inset 0 0 5px 2px #64c2d3 ;
+  background: #036475;
+}
