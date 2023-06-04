@@ -24,11 +24,11 @@ body{
   width: 35%;
   display: flex;
   justify-content: center;
-  min-width:280px;
+  min-width:370px;
   
   flex-direction: column;
-  border: 1px solid rgba(0,0,0,0.5);
-  box-shadow: 0 10px 8px -8px rgba(0,0,0,0.6);
+  border: 1px solid rgb(231, 231, 231);
+  box-shadow: 0 10px 8px -8px rgba(0,0,0,0.4);
   padding:35px 25px ;
   border-radius: 25px;
   box-sizing: border-box;
@@ -40,8 +40,8 @@ body{
   padding:7px;
   margin-bottom:20px;
   border:none;
-  border-bottom: 1px solid rgba(0,0,0,0.5);
-  box-shadow: 0 10px 8px -9px rgba(0,0,0,0.6);
+  border-bottom: 1px solid rgba(184, 184, 184);
+  box-shadow: 0 10px 8px -8px rgba(0,0,0,0.4);
   font-size:16px;
   font-weight:500;
   color:rgba(0,0,0)
@@ -60,15 +60,21 @@ input::placeholder{
   justify-content: center;
   gap:5px;
 }
-.form > span{
+.form > span>span{
   text-align: center;
   cursor: pointer;
   margin-top: 20px;
   text-decoration:underline;
   color:rgb(36, 108, 240);
 }
+.form > span{
+  text-align: center;
+ 
+  margin-top: 20px;
+ 
+}
 .form > button{
-  background: #a0cad1;
+  background: linear-gradient(to right, #1ad4c4 70%, #1aeb8a );
   border:none;
   padding:10px;
   border-radius:10px;
