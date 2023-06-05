@@ -1,8 +1,8 @@
 import React, { useEffect, useReducer } from "react";
 import { useState } from "react";
 import axios from "axios";
-
-export default function LoginPage() {
+// import '../index.css'
+export default function LoginPage({setLoggedIn,setUser}) {
   const [signedUp, setSignedUp] = useState(false);
   const [username, setUserName] = useState("");
   const [email, setEmail] = useState("");
@@ -30,19 +30,26 @@ export default function LoginPage() {
       localStorage.setItem("myData", JSON.stringify(existingData));
     } catch (err) {
       console.log(`error:${err}`);
+      
     }
     setEmail("");
     setPassword("");
     setUserName("");
+    setSignedUp(true)
   };
   const handleSignin = (e) => {
     e.preventDefault();
     try {
       const existingData = JSON.parse(localStorage.getItem("myData"));
-      if (existingData?.email === email && existingData.password === password) {
+      const loginInfo = existingData.find((info)=>info.email===email)
+      // console.log(loginInfo.username)
+      if (loginInfo?.email === email && loginInfo.password === password) {
+        setLoggedIn(true)
+        localStorage.setItem("username",JSON.stringify(loginInfo.username))
+        
       } else if (
-        existingData?.email === email &&
-        existingData.password != password
+        loginInfo?.email === email &&
+        loginInfo.password != password
       ) {
       } else {
       }
@@ -51,7 +58,7 @@ export default function LoginPage() {
     }
     setEmail("");
     setPassword("");
-    setUserName("");
+    
   };
 
   return (

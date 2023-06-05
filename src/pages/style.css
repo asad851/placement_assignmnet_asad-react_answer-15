@@ -1,0 +1,165 @@
+.taskmanagercontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+  }
+  .todoContainer {
+    height: 100%;
+    min-height:200px;
+    width: 60%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.4);
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inputbox .form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .inputbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .inputbox .form input:first-child {
+    width: 70%;
+    padding: 8px;
+    border-radius: 10px 0 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0.8px solid rgba(133, 132, 132, 0.5);
+    border-right: none;
+  }
+  .inputbox .form input:first-child:focus {
+    outline: none;
+  }
+  .inputbox .form input:last-child {
+    background: linear-gradient(#f38f8f, #babff7);
+    border: none;
+    width: 12%;
+    color: white;
+    font-weight: 600;
+    border-radius: 0 10px 10px 0;
+    transition-property: all;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+    box-sizing: border-box;
+    padding: 9px;
+    margin-left: -21px;
+  }
+  .inputbox .form input:last-child:active {
+    background: linear-gradient(to right, #babff7, #f38f8f);
+    box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.4);
+  }
+  
+  .todosSection {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    align-items: center;
+    padding: 5px 15px;
+    width: 80%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+  }
+  
+  .completed {
+    font-size: 33px;
+  }
+  
+  .todosSection button {
+    padding: 5px 25px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: white;
+    border: none;
+    background: linear-gradient(to right, rgb(240, 41, 41), rgb(245, 174, 148));
+    
+  }
+  .todosSection button:active {
+      background: linear-gradient(to right, rgb(245, 174, 148), rgb(240, 41, 41));
+    }
+    .buttons button:first-child{
+        margin-right: 15px;
+        font-size: 15px;
+        background: linear-gradient(to right, rgb(71, 241, 56), rgb(101, 220, 241));
+    }
+    .buttons button:first-child:active{
+        
+        background: linear-gradient(to right,  rgb(101, 220, 241),rgb(71, 241, 56));
+    }
+    
+  .textpart{
+      display:flex;
+      align-items: center;
+      gap:15px;
+      
+  }
+  .todosSection p {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .todosSection span {
+    color:rgba(0, 0, 0, 0.4);
+    font-size: 12px;
+    font-weight:500;
+    margin-left:35px;
+  }
+  .editTodo{
+      border-radius: 5px;
+      border:none;
+      padding:5px 10px;
+      background-color: #f6f7ff;
+      box-shadow: inset 0 0 5px 2px rgba(0, 0, 0, 0.4);
+  }
+  .editTodo:focus{
+      outline: none;
+  }
+  nav{
+    height:60px;
+    padding:10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 5px -7px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav>p{
+    font-size: 18px;
+    font-weight: 600;
+    color:rgba(0, 0, 0, 0.4)
+  }
+  nav>div{
+    display: flex;
+    align-items: center;
+    gap:20px;
+  }
+  nav>div>div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+  }
+  nav>div>div>img{
+    height:50px;
+    width:50px;
+    border-radius: 50px;
+  }
+  nav> div>button{
+    padding:5px 25px;
+    border-radius: 20px;
+    border:none;
+    background: linear-gradient(to right, rgb(240, 41, 41), rgb(245, 174, 148));
+    cursor: pointer;
+  }
